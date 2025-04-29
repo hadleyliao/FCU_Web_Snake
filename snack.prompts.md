@@ -1,5 +1,6 @@
 # 規格書 (Specification)
 
+
 ## 1. 資料結構
 - `snake`: 長度為 3 的陣列，每個元素為 `{ x: number, y: number }`
 - `direction` 與 `nextDirection`: 目前移動向量 `{ x: -1|0|1, y: -1|0|1 }`
