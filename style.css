@@ -1,0 +1,71 @@
+:root {
+  --bg: #000;
+  --board-bg: #161616;
+  --primary: #fff;
+  --accent: red;
+  --cell-border: #222;
+  --btn-border: #fff;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: var(--primary);
+  font-family: sans-serif;
+}
+
+#controls {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#controls button {
+  padding: 8px 16px;
+  background: none;
+  border: 2px solid var(--btn-border);
+  color: var(--primary);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#controls button:hover {
+  background: var(--primary);
+  color: var(--bg);
+}
+
+#score {
+  font-weight: bold;
+  min-width: 80px;
+  text-align: center;
+}
+
+#gameBoard {
+  width: 600px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(30, 1fr);
+  grid-template-rows: repeat(30, 1fr);
+  border: 2px solid var(--primary);
+  background: var(--board-bg);
+  gap: 1px;
+}
+
+.cell {
+  box-sizing: border-box;
+  border: none;
+}
+
+.snake {
+  background: var(--primary);
+}
+
+.food {
+  background: var(--accent);
+}
